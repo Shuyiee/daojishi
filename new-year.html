@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新年倒计时</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown-card">
+            <h1>新年倒计时</h1>
+            <div class="festival-info">
+                <img src="images/new-year.png" alt="新年" class="festival-icon">
+                <p>距离新年还有</p>
+            </div>
+            
+            <!-- 倒计时显示区域 -->
+            <div class="countdown-display">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <label>天</label>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <label>时</label>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <label>分</label>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <label>秒</label>
+                </div>
+            </div>
+            
+            <a href="index.html" class="back-btn">返回主页</a>
+        </div>
+    </div>
+    <script src="new-year.js"></script>
+</body>
+</html> 

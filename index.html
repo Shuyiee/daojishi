@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优雅的倒计时</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown-card">
+            <h1>倒计时</h1>
+            
+            <!-- 节日快捷按钮区域 -->
+            <div class="festival-buttons">
+                <a href="new-year.html" class="festival-btn">
+                    <img src="images/new-year.png" alt="新年">
+                    <span>新年倒计时</span>
+                </a>
+                <a href="spring-festival.html" class="festival-btn">
+                    <img src="images/spring-festival.png" alt="春节">
+                    <span>春节倒计时</span>
+                </a>
+                <a href="national-day.html" class="festival-btn">
+                    <img src="images/national-day.png" alt="国庆">
+                    <span>国庆倒计时</span>
+                </a>
+                <a href="mid-autumn.html" class="festival-btn">
+                    <img src="images/mid-autumn.png" alt="中秋">
+                    <span>中秋倒计时</span>
+                </a>
+            </div>
+
+            <!-- 时间选择区域 -->
+            <div class="time-picker">
+                <input type="datetime-local" id="targetDateTime">
+                <button id="startButton">开始倒计时</button>
+            </div>
+
+            <!-- 倒计时显示区域 -->
+            <div class="countdown-display">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <label>天</label>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <label>时</label>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <label>分</label>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <label>秒</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html> 
